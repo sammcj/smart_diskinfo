@@ -9,6 +9,12 @@ on:
       - "**/*.tf.*"
       - "**/*.tfvars.*"
       - "**/*.terraform.*"
+    branches:
+      - main
+      - master
+      - "!repo-sync/**"
+      - "!renovate/**"
+      - "!update/pre-commit-hooks/**"
   workflow_dispatch:
 
 jobs:
