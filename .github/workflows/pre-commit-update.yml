@@ -23,7 +23,7 @@ jobs:
       - run: |
           npm install -g npm eslint prettier eslint-config-prettier eslint-plugin-deprecation eslint-plugin-import eslint-plugin-unused-imports
       - uses: browniebroke/pre-commit-autoupdate-action@main
-      - uses: peter-evans/create-pull-request@b4d51739f96fca8047ad065eccef63442d8e99f7 # tag=v4
+      - uses: peter-evans/create-pull-request@d7db273d6c7206ba99224e659c982ae34a1025e3 # v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: update/pre-commit-hooks
